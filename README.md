@@ -32,9 +32,10 @@ As you can see above, we started postgres database and pgadmin
 Check if your database is up accessing pgadmin interface:
 ```
 http://localhost:9090/
+```
  - username: ricasfinancas@gmail.com
  - password: postgres
-```
+
 ![pgadmin login](https://imagizer.imageshack.com/img924/7372/K9Shkk.png)
 
 Navigate until ricas-financas-backend root and run:
