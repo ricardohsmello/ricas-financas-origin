@@ -43,9 +43,10 @@ http://localhost:9090/
 ![pgadmin login](https://imagizer.imageshack.com/img924/7372/K9Shkk.png)
 
 If everything its ok, create a server and a database instance like the image below:
+ - username: postgres
+ - password: postgres
 
 ![pgadmin database](https://imagizer.imageshack.com/img924/1051/ybeR32.png)
-
 
 ```
 - mvn spring-boot:run
