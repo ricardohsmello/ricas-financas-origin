@@ -38,7 +38,9 @@ http://localhost:9090/
 
 ![pgadmin login](https://imagizer.imageshack.com/img924/7372/K9Shkk.png)
 
-Navigate until ricas-financas-backend root and run:
+If everything its ok, navigate until ricas-financas-backend root and run:
 ```
 - mvn spring-boot:run
  ```
+ 
+ The command above w'll start the ricas-financas-backend and create all the tables in database using #flywaydb
