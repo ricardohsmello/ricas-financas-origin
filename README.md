@@ -18,6 +18,7 @@ The front-end application is a simple angular 8 project.
 # Prerequisites
  - Docker
  - JVM 1.8
+ - Lombok
  
 # Usage
 ## Running
