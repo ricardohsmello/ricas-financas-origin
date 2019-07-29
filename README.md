@@ -1,6 +1,6 @@
 # Ricas Finanças personal financial 
 
-This is my personal project named named Ricas Finanças.
+This is my personal project named Ricas Finanças.
 Ricas Finanças it's a personal financial control project that allows you to track your expenses and income
 
 This repository contains a front-end and a backend application. First of all we need to talk about Ricas-financas-backend which 
