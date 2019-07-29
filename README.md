@@ -1,29 +1,23 @@
-# My Hello World from Quarkus
+# Ricas Finanças personal financial 
 
-This is an example of rest json using Quarkus.
+This is my personal project named named Ricas Finanças.
+Ricas Finanças it's a personal financial control project that allows you to track your expenses and income
 
-This repository contains an example of rest-json using Quarkus and a simple web page to interact with our resource.
+This repository contains a front-end and a backend application. First of all we need to talk about Ricas-financas-backend which 
+is an spring-boot project that exposes all of the rest interfaces for fron-end consume.
 
+To access resources, you must be authenticated. Authentication is done through JWT token which in turn is generated from a valid username and password that is registered in the postgres database containerized in a docker.
 
-![Quick Start quarkus](
-https://imagizer.imageshack.com/img922/6096/WLCXll.png)
+The front-end application is a simple angular 8 project.
 
-## Stack
-- Quarkus
-- Quarkus-resteasy-jsonb
-- Angular
+## Build With
+- Spring-boot
+- Postgres
+- Angular 8
 
 # Usage
 ## Running
-Navigate until ricas-quarkus root and run:
-- ./mvnw compile quarkus:dev
-  - ###### Note: the above command i'll start the server on prot 8080.
-
-
-## Testing
-Type the follow URL on browser
-http://localhost:8080/soccerPlayers.html
-
- - [POST] /soccerPlayers
- - [DELETE] /soccerPlayers
- - [GET] /soccerPlayers 
+Navigate until ricas-financas-backend root and run:
+```
+- mvn spring-boot:run
+ ```
