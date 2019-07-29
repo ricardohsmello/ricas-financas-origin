@@ -17,6 +17,18 @@ The front-end application is a simple angular 8 project.
 
 # Usage
 ## Running
+
+First of all we need to up our postgres database. For this, we'll go up a instance database image using a docker container.
+Navigate until ricas-financas-backend\src\main\docker root and run:
+```
+docker-compose up -d
+```
+![Docker ps](https://imagizer.imageshack.com/img924/7782/vdFv2E.png)
+
+As you can see above, we started two containers:
+ - Postgres database
+ - Pgadmin
+
 Navigate until ricas-financas-backend root and run:
 ```
 - mvn spring-boot:run
