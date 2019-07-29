@@ -1,0 +1,15 @@
+DROP SCHEMA public CASCADE;
+CREATE SCHEMA public;
+GRANT ALL ON SCHEMA public TO postgres;
+GRANT ALL ON SCHEMA public TO public;
+
+
+insert into users values (1, 'ricas@email.com.br', '$2a$10$5YpHaJH7x89gpk5npEzYXeWGNimKE5mGt20k2UqB7626P2sTPzzbG', true);
+insert into users values (2, 'admin@email.com.br', '$2a$10$5YpHaJH7x89gpk5npEzYXeWGNimKE5mGt20k2UqB7626P2sTPzzbG', true);
+
+insert into role_users values (1, 1, 'ROLE_USER');
+insert into role_users values (2, 2, 'ROLE_ADMIN');
+
+insert into categorys values (1, 0, 'Alimentação');
+insert into finances values (1, 100, 'Almoço restaurante', 1);
+ 
