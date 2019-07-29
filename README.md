@@ -10,11 +10,15 @@ To access resources, you must be authenticated. Authentication is done through J
 
 The front-end application is a simple angular 8 project.
 
-## Build With
+# Build With
 - Spring-boot
 - Postgres
 - Angular 8
 
+# Prerequisites
+ - Docker
+ - JVM 1.8
+ 
 # Usage
 ## Running
 
