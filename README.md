@@ -25,9 +25,9 @@ docker-compose up -d
 ```
 ![Docker ps](https://imagizer.imageshack.com/img924/7782/vdFv2E.png)
 
-As you can see above, we started two containers:
- - Postgres database
- - Pgadmin
+As you can see above, we started postgres database and pgadmin
+ - ricas-financas-postgres
+ - ricas-financas_pgadmin
 
 Navigate until ricas-financas-backend root and run:
 ```
