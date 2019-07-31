@@ -20,7 +20,9 @@ import br.com.ricasfinancas.model.User;
 import br.com.ricasfinancas.security.response.Response;
 import br.com.ricasfinancas.service.RoleUserService;
 import br.com.ricasfinancas.service.UserService;
+import br.com.ricasfinancas.swaggerconfig.ControllerDocumentation;
 import br.com.ricasfinancas.util.RoleType;
+import io.swagger.annotations.Api;
 
 /**
  * @author ricardo.mello
@@ -29,6 +31,8 @@ import br.com.ricasfinancas.util.RoleType;
 @RestController
 @RequestMapping("/api/users")
 @CrossOrigin(origins = "*")
+@ControllerDocumentation
+@Api(value="user-context", description="Rest API for working in the user context")
 public class UserController {
 
 	private static final Logger log = LoggerFactory.getLogger(UserController.class);

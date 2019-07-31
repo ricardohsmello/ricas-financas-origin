@@ -21,6 +21,7 @@ CREATE TABLE "finances" (
     
 CREATE TABLE "users" (
   "iduser" INTEGER DEFAULT NEXTVAL('user_id_seq') NOT NULL,
+  "name" text,
   "username" varchar UNIQUE NOT NULL,
   "password" varchar NOT NULL,
   "enabled" boolean NOT NULL,

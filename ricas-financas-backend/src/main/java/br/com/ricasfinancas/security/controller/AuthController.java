@@ -27,6 +27,8 @@ import br.com.ricasfinancas.security.dto.JwtAuthenticationDTO;
 import br.com.ricasfinancas.security.dto.TokenDTO;
 import br.com.ricasfinancas.security.response.Response;
 import br.com.ricasfinancas.security.utils.JwtTokenUtil;
+import br.com.ricasfinancas.swaggerconfig.ControllerDocumentation;
+import io.swagger.annotations.Api;
 
 
 /**
@@ -36,6 +38,8 @@ import br.com.ricasfinancas.security.utils.JwtTokenUtil;
 @RestController
 @RequestMapping("/auth")
 @CrossOrigin(origins = "*")
+@ControllerDocumentation
+@Api(value="authentication-context", description="Rest API for working in the authentication context")
 public class AuthController {
 	
 	private static final Logger log = LoggerFactory.getLogger(AuthController.class);
@@ -52,7 +56,7 @@ public class AuthController {
 	private UserDetailsService userDetailsService;
 	
 	@PostMapping
-	public ResponseEntity<Response<TokenDTO>> gerarTokenJwt(
+	public ResponseEntity<Response<TokenDTO>> generateTokenJwt(
 			@Valid @RequestBody JwtAuthenticationDTO authenticationDTO, BindingResult result)
 			throws AuthenticationException {
 		Response<TokenDTO> response = new Response<>();
@@ -77,7 +81,7 @@ public class AuthController {
 
 	
 	@PostMapping(value = "/refresh")
-	public ResponseEntity<Response<TokenDTO>> gerarRefreshTokenJwt(HttpServletRequest request) {
+	public ResponseEntity<Response<TokenDTO>> refreshTokenJwt(HttpServletRequest request) {
 		log.info("Generating refresh token JWT.");
 		Response<TokenDTO> response = new Response<>();
 		Optional<String> token = Optional.ofNullable(request.getHeader(TOKEN_HEADER));

@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.ricasfinancas.model.Finance;
 import br.com.ricasfinancas.service.FinanceService;
+import br.com.ricasfinancas.swaggerconfig.ControllerDocumentation;
+import io.swagger.annotations.Api;
 
 /**
  * @author ricardo.mello
@@ -21,6 +23,8 @@ import br.com.ricasfinancas.service.FinanceService;
  */
 @RestController
 @RequestMapping("/api/finances")
+@ControllerDocumentation
+@Api(value="finance-context", description="Rest API for working in the finance context")
 public class FinanceController {
 
 	@Autowired
