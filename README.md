@@ -61,4 +61,4 @@ If everything its ok, create a server and a database instance like the image bel
  http://localhost:8080/swagger-ui.html
   ```
   
-  ![swagger-api](https://i.ibb.co/rfQJP2M/swagger-api.png)
+  ![swagger-api](https://i.ibb.co/Snw3WK8/swagger-api.png)
