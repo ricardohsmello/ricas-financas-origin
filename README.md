@@ -1,29 +1,64 @@
-# My Hello World from Quarkus
+# Ricas Finanças personal financial 
 
-This is an example of rest json using Quarkus.
+This is my personal project named Ricas Finanças.
+Ricas Finanças it's a personal financial control project that allows you to track your expenses and income
 
-This repository contains an example of rest-json using Quarkus and a simple web page to interact with our resource.
+This repository contains a front-end and a backend application. First of all we need to talk about Ricas-financas-backend which 
+is an spring-boot project that exposes all of the rest interfaces for fron-end consume.
 
+To access resources, you must be authenticated. Authentication is done through JWT token which in turn is generated from a valid username and password that is registered in the postgres database containerized in a docker.
 
-![Quick Start quarkus](
-https://imagizer.imageshack.com/img922/6096/WLCXll.png)
+The front-end application is a simple angular 8 project.
 
-## Stack
-- Quarkus
-- Quarkus-resteasy-jsonb
-- Angular
+# Built With
+- Spring-boot
+- Springfox-swagger-ui
+- Postgres
+- Angular 8
 
+# Prerequisites
+ - Docker
+ - JVM 1.8
+ - Angular CLI
+ 
 # Usage
 ## Running
-Navigate until ricas-quarkus root and run:
-- ./mvnw compile quarkus:dev
-  - ###### Note: the above command i'll start the server on prot 8080.
 
+First of all we need to up our postgres database. For this, we'll go up a instance database image using a docker container.
+Navigate until ricas-financas-backend\src\main\docker root and run:
+```
+docker-compose up -d
+```
+![Docker ps](https://imagizer.imageshack.com/img924/7782/vdFv2E.png)
 
-## Testing
-Type the follow URL on browser
-http://localhost:8080/soccerPlayers.html
+As you can see above, we started postgres database and pgadmin
+ - ricas-financas_postgres
+ - ricas-financas_pgadmin
 
- - [POST] /soccerPlayers
- - [DELETE] /soccerPlayers
- - [GET] /soccerPlayers 
+Check if your database is up accessing pgadmin interface:
+```
+http://localhost:9090/
+```
+ - username: ricasfinancas@gmail.com
+ - password: postgres
+
+![pgadmin login](https://i.ibb.co/BZqNbX6/pgadmin-login.png)
+
+If everything its ok, create a server and a database instance like the image below:
+ - username: postgres
+ - password: postgres
+
+![pgadmin database](https://imagizer.imageshack.com/img924/1051/ybeR32.png)
+
+```
+- mvn spring-boot:run
+ ```
+ 
+ The command above w'll start the ricas-financas-backend and create all the tables in database using Flywaydb migration.
+ 
+ If everything its ok, the API Rest w'll start on 8080 and you can access:
+  ```
+ http://localhost:8080/swagger-ui.html
+  ```
+  
+  ![swagger-api](https://i.ibb.co/Jrx3ytG/swagger-api.png)

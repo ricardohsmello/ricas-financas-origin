@@ -15,7 +15,7 @@ services:
     container_name: ricas-financas_pgadmin
     image: dpage/pgadmin4
     environment:
-      PGADMIN_DEFAULT_EMAIL: ricardohsmello@gmail.com
+      PGADMIN_DEFAULT_EMAIL: ricasfinancas@gmail.com
       PGADMIN_DEFAULT_PASSWORD: postgres
     ports:
       - '9090:80'
