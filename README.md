@@ -55,4 +55,9 @@ If everything its ok, create a server and a database instance like the image bel
  
  The command above w'll start the ricas-financas-backend and create all the tables in database using Flywaydb migration.
  
- If everything its ok, the API Rest w'll start on 8080 and you can access
+ If everything its ok, the API Rest w'll start on 8080 and you can access:
+  ```
+ http://localhost:8080/swagger-ui.html
+  ```
+  
+  ![swagger-api](tps://i.ibb.co/rfQJP2M/swagger-api.png)
