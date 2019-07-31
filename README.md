@@ -12,8 +12,8 @@ The front-end application is a simple angular 8 project.
 
 # Built With
 - Spring-boot
+- Springfox-swagger-ui
 - Postgres
-- Swagger/SpringFOX
 - Angular 8
 
 # Prerequisites
