@@ -42,7 +42,7 @@ http://localhost:9090/
  - username: ricasfinancas@gmail.com
  - password: postgres
 
-![pgadmin login](https://imagizer.imageshack.com/img924/7372/K9Shkk.png)
+![pgadmin login](https://i.ibb.co/BZqNbX6/pgadmin-login.png)
 
 If everything its ok, create a server and a database instance like the image below:
  - username: postgres
