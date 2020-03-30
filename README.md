@@ -15,6 +15,7 @@ The front-end application is a simple angular 8 project.
 - Springfox-swagger-ui
 - Postgres
 - Angular 8
+- Flyway
 
 # Prerequisites
  - Docker
